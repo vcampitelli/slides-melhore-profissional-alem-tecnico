@@ -1,0 +1,153 @@
+/**
+ * Overriding theme
+ */
+:root {
+  --r-main-font: 'Cabin', times, 'Source Sans Pro', Helvetica, sans-serif;
+  --r-main-color: #1e2640;
+  --r-heading-font: 'Cabin', times, 'Source Sans Pro', Helvetica, sans-serif;
+  --r-heading-color: #922c40;
+  --r-heading-font-weight: 700;
+  --r-heading-text-transform: none;
+  --r-heading-letter-spacing: -1px;
+  --r-subheading-color: #ac606d;
+  --r-subheading-font-weight: 400;
+  --r-background-color: #FCF9F4;
+  --r-link-color: #dc9750;
+  --r-link-color-dark: #cc8740;
+  --r-link-color-hover: #eca760;
+}
+.reveal .slides {
+  text-align: left;
+  letter-spacing: var(--r-heading-letter-spacing);
+}
+
+/**
+ * Profile Pic
+ */
+#profile-pic {
+  margin: 0 auto;
+  max-width: 200px;
+  border-radius: 50%;
+}
+#profile-pic + h4 {
+  font-size: 0.8em;
+}
+
+/**
+ * About me
+ */
+.about-me-links {
+  padding: 24px 0;
+}
+.about-me-links p {
+  margin: 0;
+  line-height: 1;
+}
+.about-me-links p + a {
+  font-weight: 600;
+}
+
+/**
+ * Titles
+ */
+.reveal h1 {
+  color: var(--r-main-color);
+  letter-spacing: calc(var(--r-heading-letter-spacing) - 4px);
+}
+.reveal h2 {
+  letter-spacing: calc(var(--r-heading-letter-spacing) - 2px);
+}
+h2.subheading,
+h3.subheading,
+h4.subheading,
+h5.subheading,
+h6.subheading {
+  color: var(--r-subheading-color);
+  margin-bottom: 0;
+  letter-spacing: calc(var(--r-heading-letter-spacing) - 1px);
+  font-weight: var(--r-subheading-font-weight);
+}
+h2.subheading {
+  font-size: calc(0.7 * var(--r-heading2-size));
+}
+h3.subheading {
+  font-size: calc(0.7 * var(--r-heading3-size));
+}
+h4.subheading {
+  font-size: calc(0.7 * var(--r-heading4-size));
+}
+h5.subheading {
+  font-size: calc(0.65 * var(--r-heading4-size));
+}
+
+/**
+ * Display
+ */
+.d-flex {
+  display: flex;
+}
+.align-items-center {
+  align-items: center;
+}
+.d-flex.one-third-columns > div {
+  flex-basis: 33%;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+.d-flex.half-columns > div {
+  flex-basis: 50%;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+/**
+ * Typography
+ */
+.smaller {
+  font-size: 0.8em;
+}
+sup.smaller,
+.smallest {
+  font-size: 0.5em;
+}
+
+/**
+ * Other
+ */
+figure > img {
+  margin: 0 !important;
+}
+.mr-1 {
+  margin-right: 1em;
+}
+.pr-1 {
+  padding-right: 1em;
+}
+.reveal blockquote {
+  margin-left: 0;
+  padding: 0;
+  box-shadow: none;
+  background: none;
+  width: 100%;
+}
+.reveal blockquote.larger {
+  font-size: 1.25em;
+}
+.reveal blockquote > cite {
+  display: block;
+  color: #999;
+  font-style: italic;
+  font-size: 0.9em;
+}
+.reveal .has-dark-background blockquote > cite {
+  color: #f3eac0;
+}
+.text-center {
+  text-align: center;
+}
+.reveal ul {
+  list-style-type: square;
+}
+.reveal li + li {
+  margin-top: 10px;
+}
